@@ -13,6 +13,7 @@
 		EBE636AD2644D2DF00F8F77F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE636AC2644D2DF00F8F77F /* Assets.xcassets */; };
 		EBE636B02644D2DF00F8F77F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE636AF2644D2DF00F8F77F /* Preview Assets.xcassets */; };
 		EBE636B32644D2DF00F8F77F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE636B12644D2DF00F8F77F /* LaunchScreen.storyboard */; };
+		F1061D3B265697200093ABB1 /* ProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061D3A265697200093ABB1 /* ProcessView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EBE636AF2644D2DF00F8F77F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EBE636B22644D2DF00F8F77F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBE636B42644D2DF00F8F77F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1061D3A265697200093ABB1 /* ProcessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				EBE636A62644D2DE00F8F77F /* AppDelegate.swift */,
 				EBE636A82644D2DE00F8F77F /* SceneDelegate.swift */,
 				EBE636AA2644D2DE00F8F77F /* ContentView.swift */,
+				F1061D3A265697200093ABB1 /* ProcessView.swift */,
 				EBE636AC2644D2DF00F8F77F /* Assets.xcassets */,
 				EBE636B12644D2DF00F8F77F /* LaunchScreen.storyboard */,
 				EBE636B42644D2DF00F8F77F /* Info.plist */,
@@ -147,6 +150,7 @@
 			files = (
 				EBE636A72644D2DE00F8F77F /* AppDelegate.swift in Sources */,
 				EBE636A92644D2DE00F8F77F /* SceneDelegate.swift in Sources */,
+				F1061D3B265697200093ABB1 /* ProcessView.swift in Sources */,
 				EBE636AB2644D2DE00F8F77F /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

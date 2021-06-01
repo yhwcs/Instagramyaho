@@ -16,57 +16,62 @@ struct ContentView: View {
     /*let url = URL(string: "https://www.instagram.com/accounts/emailsignup/")*/
     
     var body: some View {
-        VStack{
-            Spacer()
-            Text("Instagramyaho")
-                .font(.largeTitle)
-                .padding()
-            
-            //TextField("사용자 이름", text: $userid)
-                //  .padding()
-            
-            //Text("You entered: \(userid)")
-            //print("You entered: \(userid)")
-            Spacer()
-            HStack{
-                TextField("사용자 이름",text: $userid).frame(width: 200, height: 20, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/).padding().background(RoundedRectangle(cornerRadius: 5).strokeBorder())
-            }
-            
-            HStack{
-                /*
-                Toggle(isOn: $isOn){
-                    Text("자동")
-                }.frame(width: 90, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                */
-                Button(action: { } ) {
-                    Text("로그인")
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.white)
-                        .frame(width: 200, height: 20, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        .padding()
-                        .background(RoundedRectangle(cornerRadius: 5).strokeBorder())
-                        .background(Color.blue)
+        NavigationView{
+            VStack{
+                // Spacer().navigationBarTitle("Instagramyaho")
+                Image("logo")
+                //Text("Instagramyaho")
+                //    .font(.largeTitle)
+                //    .padding()
+                
+                //TextField("사용자 이름", text: $userid)
+                    //  .padding()
+                
+                //Text("You entered: \(userid)")
+                //print("You entered: \(userid)")
+                Spacer()
+                HStack{
+                    TextField("사용자 이름",text: $userid).frame(width: 200, height: 20, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/).padding().background(RoundedRectangle(cornerRadius: 5).strokeBorder())
                 }
-            }.padding()
-            Spacer()
-            
-            HStack{
-                Text("계정이 없으신가요?")
-            
-                Button(action: {self.signUp = true} ){
-                    Text("가입하기")
-                    .foregroundColor(Color.blue)
+                
+                HStack{
+                    /*
+                    Toggle(isOn: $isOn){
+                        Text("자동")
+                    }.frame(width: 90, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    */
+                    //Button(action: { } ) {
+                    NavigationLink(destination: ProcessView()){
+                        Text("로그인")
+                            .fontWeight(.bold)
+                            .foregroundColor(Color.white)
+                            .frame(width: 200, height: 20, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .padding()
+                            .background(RoundedRectangle(cornerRadius: 5).strokeBorder())
+                            .background(Color.blue)
+                    }
+                }.padding()
+                Spacer()
+                
+                HStack{
+                    Text("계정이 없으신가요?")
+                
+                    Button(action: {self.signUp = true} ){
+                        Text("가입하기")
+                        .foregroundColor(Color.blue)
+                    }
+                    /*
+                    if self.signUp == true {
+                        var ret = 0
+                        ret = linkClicked(sender: <#T##AnyObject#>)
+                    }*/
                 }
-                /*
-                if self.signUp == true {
-                    var ret = 0
-                    ret = linkClicked(sender: <#T##AnyObject#>)
-                }*/
+                
+                Spacer()
+     
             }
-            
-            Spacer()
- 
-        }
+        } // End of NavigationView
+        .navigationViewStyle(StackNavigationViewStyle())
     }
     
     //Method
