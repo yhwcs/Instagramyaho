@@ -14,6 +14,10 @@
 		EBE636B02644D2DF00F8F77F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE636AF2644D2DF00F8F77F /* Preview Assets.xcassets */; };
 		EBE636B32644D2DF00F8F77F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE636B12644D2DF00F8F77F /* LaunchScreen.storyboard */; };
 		F1061D3B265697200093ABB1 /* ProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061D3A265697200093ABB1 /* ProcessView.swift */; };
+		F12F7F8B2673525300723764 /* ResultListTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F7F8A2673525300723764 /* ResultListTabView.swift */; };
+		F12F7F8E2673530D00723764 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F7F8D2673530D00723764 /* HomeTabView.swift */; };
+		F12F7F922673594500723764 /* ResultAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F7F912673594500723764 /* ResultAView.swift */; };
+		F12F7F952673596100723764 /* ResultBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F7F942673596100723764 /* ResultBView.swift */; };
 		F1BB4FD22665FE3200613667 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1BB4FD12665FE3200613667 /* LoadingView.xib */; };
 		F1BB4FD52665FE5D00613667 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BB4FD42665FE5D00613667 /* LoadingView.swift */; };
 		F1BB4FFC26661F4700613667 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BB4FFB26661F4700613667 /* LoadingViewController.swift */; };
@@ -29,6 +33,10 @@
 		EBE636B22644D2DF00F8F77F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBE636B42644D2DF00F8F77F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1061D3A265697200093ABB1 /* ProcessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessView.swift; sourceTree = "<group>"; };
+		F12F7F8A2673525300723764 /* ResultListTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultListTabView.swift; sourceTree = "<group>"; };
+		F12F7F8D2673530D00723764 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
+		F12F7F912673594500723764 /* ResultAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultAView.swift; sourceTree = "<group>"; };
+		F12F7F942673596100723764 /* ResultBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultBView.swift; sourceTree = "<group>"; };
 		F1BB4FD12665FE3200613667 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		F1BB4FD42665FE5D00613667 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		F1BB4FFB26661F4700613667 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +78,10 @@
 				EBE636A62644D2DE00F8F77F /* AppDelegate.swift */,
 				EBE636A82644D2DE00F8F77F /* SceneDelegate.swift */,
 				EBE636AA2644D2DE00F8F77F /* ContentView.swift */,
+				F12F7F8D2673530D00723764 /* HomeTabView.swift */,
+				F12F7F8A2673525300723764 /* ResultListTabView.swift */,
+				F12F7F942673596100723764 /* ResultBView.swift */,
+				F12F7F912673594500723764 /* ResultAView.swift */,
 				F1061D3A265697200093ABB1 /* ProcessView.swift */,
 				EBE636AC2644D2DF00F8F77F /* Assets.xcassets */,
 				EBE636B12644D2DF00F8F77F /* LaunchScreen.storyboard */,
@@ -168,9 +180,13 @@
 			files = (
 				EBE636A72644D2DE00F8F77F /* AppDelegate.swift in Sources */,
 				EBE636A92644D2DE00F8F77F /* SceneDelegate.swift in Sources */,
+				F12F7F952673596100723764 /* ResultBView.swift in Sources */,
 				F1061D3B265697200093ABB1 /* ProcessView.swift in Sources */,
 				F1BB4FD52665FE5D00613667 /* LoadingView.swift in Sources */,
 				EBE636AB2644D2DE00F8F77F /* ContentView.swift in Sources */,
+				F12F7F8E2673530D00723764 /* HomeTabView.swift in Sources */,
+				F12F7F922673594500723764 /* ResultAView.swift in Sources */,
+				F12F7F8B2673525300723764 /* ResultListTabView.swift in Sources */,
 				F1BB4FFC26661F4700613667 /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

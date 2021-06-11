@@ -21,7 +21,10 @@ struct ProcessView: View {
         NavigationView{
             VStack(spacing: 30){
                 Image("logo").padding()
-                Text("\(userid) 분석중입니다!").padding()
+                HStack{
+                    Image(systemName: "person")
+                    Text("\(userid)님의 계정을 분석중입니다.").padding()
+                }
                 ProgressView(value: progressValue).onReceive(timer) { _ in if self.progressValue < 1.0 { self.progressValue += 0.1 } }
                 //Text("\(currentDate)") .onReceive(timer) { input in self.currentDate = input }
                 //Text("\(timeRemaining)") .onReceive(timer) { _ in if self.timeRemaining > 0 { self.timeRemaining -= 1 } }
@@ -54,7 +57,8 @@ struct ProcessView: View {
                     }
                     */
                     .fullScreenCover(isPresented: $showingSheet, content: {
-                        SecondView()
+                        //SecondView()
+                        ResultAView()
                     })
                 }.padding()
                     
@@ -85,9 +89,9 @@ struct SecondView: View {
     
     var body: some View {
         ZStack(alignment: .topLeading) {
-            Color("puple")
+            Color(.systemTeal)
                 .ignoresSafeArea()
-            
+            VStack{
             Button(action: {
                 presentationMode.wrappedValue.dismiss()
             }) {
@@ -96,13 +100,16 @@ struct SecondView: View {
                 .foregroundColor(.blue)
                 .padding(20)
             }
+            //Spacer()
+            Text("Result")
+            }
         }
     }
 }
 
 struct ProcessView_Previews: PreviewProvider {
     static var previews: some View {
-        ProcessView(userid: ContentView().$userid)
+        SecondView()
     }
 }
 	
