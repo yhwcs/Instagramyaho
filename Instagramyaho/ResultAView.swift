@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ResultAView: View {
+    @ObservedObject var resultlist = Resultlist()
     @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         VStack{
+            
             HStack{
                 Button(action: {
                     presentationMode.wrappedValue.dismiss()
@@ -24,14 +27,32 @@ struct ResultAView: View {
             }
             Spacer()
             Text("Result A page")
-            Spacer()
-            Text("list")
-            Spacer()
-        }
-    }
-}
+            
+            NavigationView {
+                List {
+                    ForEach(resultlist.items) {
+                        index in
+                        RowView(resultlistItem: self.$resultlist.items[index])
+                    } // End of ForEach
+                    .onDelete(perform: resultlist.deleteListItem)
+                    .onMove(perform: resultlist.moveListItem)
+                } // End of list
+            } // End of NavigationView
+            .navigationBarTitle("Resultlist")
 
-struct ResultA_Previews: PreviewProvider {
+        } // End of VStack
+        .onDisappear(){
+            print("ChecklistView has disappeared!")
+            self.resultlist.saveResultlistItems()
+        } // End of .onDisappear()
+        .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification)){
+            _ in print("willResignActiveNotification")
+            self.resultlist.saveResultlistItems()
+        }
+    } // End of body
+} // End of View
+
+struct ResultAView_Previews: PreviewProvider {
     static var previews: some View {
         ResultAView()
     }
