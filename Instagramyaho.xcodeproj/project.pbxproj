@@ -14,6 +14,7 @@
 		EBE636B02644D2DF00F8F77F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE636AF2644D2DF00F8F77F /* Preview Assets.xcassets */; };
 		EBE636B32644D2DF00F8F77F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE636B12644D2DF00F8F77F /* LaunchScreen.storyboard */; };
 		F1061D3B265697200093ABB1 /* ProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061D3A265697200093ABB1 /* ProcessView.swift */; };
+		F1183567267A41B80029D7B7 /* Mylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1183566267A41B80029D7B7 /* Mylist.swift */; };
 		F12F7F8B2673525300723764 /* ResultListTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F7F8A2673525300723764 /* ResultListTabView.swift */; };
 		F12F7F8E2673530D00723764 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F7F8D2673530D00723764 /* HomeTabView.swift */; };
 		F12F7F922673594500723764 /* ResultAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F7F912673594500723764 /* ResultAView.swift */; };
@@ -40,6 +41,7 @@
 		EBE636B22644D2DF00F8F77F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBE636B42644D2DF00F8F77F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1061D3A265697200093ABB1 /* ProcessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessView.swift; sourceTree = "<group>"; };
+		F1183566267A41B80029D7B7 /* Mylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mylist.swift; sourceTree = "<group>"; };
 		F12F7F8A2673525300723764 /* ResultListTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultListTabView.swift; sourceTree = "<group>"; };
 		F12F7F8D2673530D00723764 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
 		F12F7F912673594500723764 /* ResultAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultAView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				F1CD572D2679DDFA0018E5B1 /* RowView.swift */,
 				F1061D3A265697200093ABB1 /* ProcessView.swift */,
 				F1CD57242679DA350018E5B1 /* Resultlist.swift */,
+				F1183566267A41B80029D7B7 /* Mylist.swift */,
 				F1CD57272679DA600018E5B1 /* ResultlistItem.swift */,
 				F1CD572A2679DAFC0018E5B1 /* NewResultlistItemView.swift */,
 				F1CD573C2679EFE30018E5B1 /* MylistView.swift */,
@@ -206,6 +209,7 @@
 				F1CD57282679DA600018E5B1 /* ResultlistItem.swift in Sources */,
 				EBE636A92644D2DE00F8F77F /* SceneDelegate.swift in Sources */,
 				F1CD57382679ECF40018E5B1 /* Binding.swift in Sources */,
+				F1183567267A41B80029D7B7 /* Mylist.swift in Sources */,
 				F12F7F952673596100723764 /* ResultBView.swift in Sources */,
 				F1061D3B265697200093ABB1 /* ProcessView.swift in Sources */,
 				F1CD57252679DA350018E5B1 /* Resultlist.swift in Sources */,

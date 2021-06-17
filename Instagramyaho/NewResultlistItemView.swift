@@ -9,13 +9,19 @@
 import SwiftUI
 
 struct NewResultlistItemView: View {
-    var resultlist: Resultlist
+    //var resultlist: Resultlist
+    var resultlist: Mylist
+    //@EnvironmentObject var MyResultlist: UserSetting
     @State var newItemName = ""
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         VStack{
-            Text("Add new item")
+            Spacer()
+            HStack{
+                Image(systemName: "square.and.pencil")
+                Text("Add new item")
+            }
             Form{
                 //Text("Enter item name")
                 TextField("Enter new item name here", text: $newItemName)
@@ -26,25 +32,29 @@ struct NewResultlistItemView: View {
                     self.presentationMode.wrappedValue.dismiss()
                 }){
                     HStack{
-                        Image(systemName: "plus.circle.fill")
-                        Text("Add new item")
+                        Image(systemName: "plus.circle")
+                        Text("Save")
                     } // End of HStack
                 } // End of Button
                 .disabled(newItemName.count == 0)
             } // End of List
-            Text("Swipe down to cancel.")
+            HStack{
+                Image(systemName: "arrow.down")
+                Text("Swipe down to cancel.")
+            }
         } // End of VStack
         .onAppear(){
             print("NewChecklistItemView has appeared!")
         } // End of .onAppear()
         .onDisappear(){
             print("NewChecklistItemView has disappeared!")
+            resultlist.saveResultlistItems()
         } // End of .onDisappear()
     } // End of body
 } // End of View
 
 struct NewResultlistItemView_Previews: PreviewProvider {
     static var previews: some View {
-        NewResultlistItemView(resultlist: Resultlist())
+        NewResultlistItemView(resultlist: Mylist())
     }
 }

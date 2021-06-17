@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ResultAView: View {
-    @ObservedObject var resultlist = Resultlist()
+    @EnvironmentObject var MyResultlist: UserSetting
+    //@ObservedObject var resultlist = Resultlist()
     @Environment(\.presentationMode) var presentationMode
+    @State var i: Int = 0
     
     var body: some View {
         VStack{
@@ -30,12 +32,12 @@ struct ResultAView: View {
             
             NavigationView {
                 List {
-                    ForEach(resultlist.items) {
+                    ForEach(MyResultlist.Alist.items) {
                         index in
-                        RowView(resultlistItem: self.$resultlist.items[index])
+                        RowView(resultlistItem: self.$MyResultlist.Alist.items[index])
                     } // End of ForEach
-                    .onDelete(perform: resultlist.deleteListItem)
-                    .onMove(perform: resultlist.moveListItem)
+                    .onDelete(perform: MyResultlist.Alist.deleteListItem)
+                    .onMove(perform: MyResultlist.Alist.moveListItem)
                 } // End of list
             } // End of NavigationView
             .navigationBarTitle("Resultlist")
@@ -43,14 +45,16 @@ struct ResultAView: View {
         } // End of VStack
         .onDisappear(){
             print("ChecklistView has disappeared!")
-            self.resultlist.saveResultlistItems()
+            self.MyResultlist.Alist.saveResultlistItems()
         } // End of .onDisappear()
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification)){
             _ in print("willResignActiveNotification")
-            self.resultlist.saveResultlistItems()
+            self.MyResultlist.Alist.saveResultlistItems()
         }
     } // End of body
+    
 } // End of View
+
 
 struct ResultAView_Previews: PreviewProvider {
     static var previews: some View {

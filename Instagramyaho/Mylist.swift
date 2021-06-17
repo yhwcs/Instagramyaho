@@ -1,5 +1,5 @@
 //
-//  Resultlist.swift
+//  Mylist.swift
 //  Instagramyaho
 //
 //  Created by RelMac User Exercise1 on 2021/06/16.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Resultlist: ObservableObject {
+class Mylist: ObservableObject {
     
     // Initialzation
     init() {
@@ -41,7 +41,7 @@ class Resultlist: ObservableObject {
     }
     
     func dataFilePath() -> URL {
-        let filePath = documentsDirectory().appendingPathComponent("Resultlist.plist")
+        let filePath = documentsDirectory().appendingPathComponent("Mylist.plist")
         print("Data file path is: \(filePath)")
         return filePath
     }
@@ -75,5 +75,4 @@ class Resultlist: ObservableObject {
             } // End of catch
         } // End of if
     } // End of function
-    
 }
