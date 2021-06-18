@@ -58,7 +58,7 @@ struct ProcessView: View {
                     */
                     .fullScreenCover(isPresented: $showingSheet, content: {
                         //SecondView()
-                        ResultAView()
+                        ResultBlueView()
                     })
                 }.padding()
                     

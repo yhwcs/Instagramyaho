@@ -41,7 +41,7 @@ class Resultlist: ObservableObject {
     }
     
     func dataFilePath() -> URL {
-        let filePath = documentsDirectory().appendingPathComponent("Resultlist.plist")
+        let filePath = documentsDirectory().appendingPathComponent("ResultBluelist.plist")
         print("Data file path is: \(filePath)")
         return filePath
     }

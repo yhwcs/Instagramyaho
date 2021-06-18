@@ -16,14 +16,14 @@ struct MylistView: View {
         NavigationView {
             List {
                 Section(header: Text("ResultA")){
-                    ForEach(MyResultlist.Alist.items) {
+                    ForEach(MyResultlist.Bluelist.items) {
                         index in
-                        if MyResultlist.Alist.items[index].isChecked == true{
-                            RowView(resultlistItem: self.$MyResultlist.Alist.items[index])
+                        if MyResultlist.Bluelist.items[index].isChecked == true{
+                            RowView(resultlistItem: self.$MyResultlist.Bluelist.items[index])
                         }
                     } // End of ForEach
                     //.onDelete(perform: MyResultlist.list.deleteListItem)
-                    .onMove(perform: MyResultlist.Alist.moveListItem)
+                    .onMove(perform: MyResultlist.Bluelist.moveListItem)
                 }
                 Section(header: Text("MyResult")){
                     ForEach(Ownlist.items) {
@@ -56,17 +56,17 @@ struct MylistView: View {
         .onAppear(){
             print("ChecklistView has appeared!")
             self.Ownlist.loadResultlistItems()
-            self.MyResultlist.Alist.loadResultlistItems()
+            self.MyResultlist.Bluelist.loadResultlistItems()
         } // End of .onAppear()
         .onDisappear(){
             print("ChecklistView has disappeared!")
             self.Ownlist.saveResultlistItems()
-            self.MyResultlist.Alist.saveResultlistItems()
+            self.MyResultlist.Bluelist.saveResultlistItems()
         } // End of .onDisappear()
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification)){
             _ in print("willResignActiveNotification")
             self.Ownlist.saveResultlistItems()
-            self.MyResultlist.Alist.saveResultlistItems()
+            self.MyResultlist.Bluelist.saveResultlistItems()
         }
     } // End of body
     

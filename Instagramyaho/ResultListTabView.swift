@@ -24,7 +24,7 @@ struct ResultListTabView: View {
                 }
                 .fullScreenCover(isPresented: $showingSheetA, content: {
                     //SecondView()
-                    ResultAView()
+                    ResultBlueView()
                 })
                 HStack{
                     Text("Result B")

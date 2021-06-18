@@ -12,9 +12,7 @@ struct RowView: View {
     //@State var checkmark: String
     var body: some View {
         HStack{
-            Text(resultlistItem.isChecked ? "☑️" : "⬛️")
-            //Image(systemName: Decide_checkmark())
-            //Spacer()
+            Text(resultlistItem.isChecked ? "❤️" : "🤍")
             Text(resultlistItem.name)
             Spacer()
         } // End of HStack
@@ -22,16 +20,9 @@ struct RowView: View {
         .onTapGesture {
             self.resultlistItem.isChecked.toggle()
         }
-        
+        .padding()
     } // Enf of body
-    
-    func Decide_checkmark() -> String {
-        if self.resultlistItem.isChecked == true {
-            return "checkmark.square.fill"
-        } else {
-            return "square.fill"
-        }
-    }
+
 }
 
 struct RowView_Previews: PreviewProvider {

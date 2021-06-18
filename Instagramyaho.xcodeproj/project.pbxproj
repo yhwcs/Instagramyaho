@@ -17,7 +17,7 @@
 		F1183567267A41B80029D7B7 /* Mylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1183566267A41B80029D7B7 /* Mylist.swift */; };
 		F12F7F8B2673525300723764 /* ResultListTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F7F8A2673525300723764 /* ResultListTabView.swift */; };
 		F12F7F8E2673530D00723764 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F7F8D2673530D00723764 /* HomeTabView.swift */; };
-		F12F7F922673594500723764 /* ResultAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F7F912673594500723764 /* ResultAView.swift */; };
+		F12F7F922673594500723764 /* ResultBlueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F7F912673594500723764 /* ResultBlueView.swift */; };
 		F12F7F952673596100723764 /* ResultBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F7F942673596100723764 /* ResultBView.swift */; };
 		F1BB4FD22665FE3200613667 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1BB4FD12665FE3200613667 /* LoadingView.xib */; };
 		F1BB4FD52665FE5D00613667 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BB4FD42665FE5D00613667 /* LoadingView.swift */; };
@@ -44,7 +44,7 @@
 		F1183566267A41B80029D7B7 /* Mylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mylist.swift; sourceTree = "<group>"; };
 		F12F7F8A2673525300723764 /* ResultListTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultListTabView.swift; sourceTree = "<group>"; };
 		F12F7F8D2673530D00723764 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
-		F12F7F912673594500723764 /* ResultAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultAView.swift; sourceTree = "<group>"; };
+		F12F7F912673594500723764 /* ResultBlueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultBlueView.swift; sourceTree = "<group>"; };
 		F12F7F942673596100723764 /* ResultBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultBView.swift; sourceTree = "<group>"; };
 		F1BB4FD12665FE3200613667 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		F1BB4FD42665FE5D00613667 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 				F12F7F8D2673530D00723764 /* HomeTabView.swift */,
 				F12F7F8A2673525300723764 /* ResultListTabView.swift */,
 				F12F7F942673596100723764 /* ResultBView.swift */,
-				F12F7F912673594500723764 /* ResultAView.swift */,
+				F12F7F912673594500723764 /* ResultBlueView.swift */,
 				F1CD572D2679DDFA0018E5B1 /* RowView.swift */,
 				F1061D3A265697200093ABB1 /* ProcessView.swift */,
 				F1CD57242679DA350018E5B1 /* Resultlist.swift */,
@@ -218,7 +218,7 @@
 				F1CD572B2679DAFC0018E5B1 /* NewResultlistItemView.swift in Sources */,
 				F1CD572E2679DDFA0018E5B1 /* RowView.swift in Sources */,
 				F12F7F8E2673530D00723764 /* HomeTabView.swift in Sources */,
-				F12F7F922673594500723764 /* ResultAView.swift in Sources */,
+				F12F7F922673594500723764 /* ResultBlueView.swift in Sources */,
 				F12F7F8B2673525300723764 /* ResultListTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
