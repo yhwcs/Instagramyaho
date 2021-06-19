@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Resultlist: ObservableObject {
+class Resultlist {
     
     // Initialzation
     init() {
@@ -41,7 +41,7 @@ class Resultlist: ObservableObject {
     }
     
     func dataFilePath() -> URL {
-        let filePath = documentsDirectory().appendingPathComponent("ResultBluelist.plist")
+        let filePath = documentsDirectory().appendingPathComponent("Resultlist.plist")
         print("Data file path is: \(filePath)")
         return filePath
     }
@@ -76,4 +76,68 @@ class Resultlist: ObservableObject {
         } // End of if
     } // End of function
     
+}
+
+class ResultBluelist: Resultlist, ObservableObject {
+    override func dataFilePath() -> URL {
+        let filePath = documentsDirectory().appendingPathComponent("ResultBluelist.plist")
+        print("Data file path is: \(filePath)")
+        return filePath
+    }
+}
+
+class ResultGreenlist: Resultlist, ObservableObject {
+    override func dataFilePath() -> URL {
+        let filePath = documentsDirectory().appendingPathComponent("ResultGreenlist.plist")
+        print("Data file path is: \(filePath)")
+        return filePath
+    }
+}
+
+class ResultBlacklist: Resultlist, ObservableObject {
+    override func dataFilePath() -> URL {
+        let filePath = documentsDirectory().appendingPathComponent("ResultBlacklist.plist")
+        print("Data file path is: \(filePath)")
+        return filePath
+    }
+}
+
+class ResultRedlist: Resultlist, ObservableObject {
+    override func dataFilePath() -> URL {
+        let filePath = documentsDirectory().appendingPathComponent("ResultRedlist.plist")
+        print("Data file path is: \(filePath)")
+        return filePath
+    }
+}
+
+class ResultNavylist: Resultlist, ObservableObject {
+    override func dataFilePath() -> URL {
+        let filePath = documentsDirectory().appendingPathComponent("ResultNavylist.plist")
+        print("Data file path is: \(filePath)")
+        return filePath
+    }
+}
+
+class ResultOrangelist: Resultlist, ObservableObject {
+    override func dataFilePath() -> URL {
+        let filePath = documentsDirectory().appendingPathComponent("ResultOrangelist.plist")
+        print("Data file path is: \(filePath)")
+        return filePath
+    }
+}
+
+class ResultYellowlist: Resultlist, ObservableObject {
+    override func dataFilePath() -> URL {
+        let filePath = documentsDirectory().appendingPathComponent("ResultYellowlist.plist")
+        print("Data file path is: \(filePath)")
+        return filePath
+    }
+}
+
+class ResultPurplelist: Resultlist, ObservableObject {
+    override func dataFilePath() -> URL {
+        let filePath = documentsDirectory().appendingPathComponent("ResultPurplelist.plist")
+        print("Data file path is: \(filePath)")
+        return filePath
+    }
 }

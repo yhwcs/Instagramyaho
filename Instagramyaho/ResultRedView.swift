@@ -1,26 +1,17 @@
 //
-//  ResultA.swift
+//  ResultRedView.swift
 //  Instagramyaho
 //
-//  Created by RelMac User Exercise1 on 2021/06/11.
+//  Created by RelMac User Exercise1 on 2021/06/19.
 //
 
 import SwiftUI
 
-struct ResultBlueView: View {
+struct ResultRedView: View {
     @EnvironmentObject var MyResultlist: UserSetting
-    //@ObservedObject var resultlist = Resultlist()
     @Environment(\.presentationMode) var presentationMode
-    
-    /*
-    init() {
-        UINavigationBar.appearance().barTintColor = .clear
-        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
-    }
-    */
-    
     var body: some View {
-        VStack{	
+        VStack{
             HStack{
                 Button(action: {
                     presentationMode.wrappedValue.dismiss()
@@ -35,23 +26,23 @@ struct ResultBlueView: View {
             NavigationView{
                 ScrollView {
                     Circle()
-                        .fill(AngularGradient(gradient: Gradient(colors: [.white, .blue]), center: .topLeading, angle: .degrees(180+45)))
+                        .fill(AngularGradient(gradient: Gradient(colors: [.white, .red]), center: .topLeading, angle: .degrees(180+45)))
                         .frame(width:130, height:130)
                     HStack{
-                        Text("자유로운").font(.system(size:25, weight: .black))
-                        Text("파랑").font(.system(size:25, weight: .black))
-                            .foregroundColor(Color.blue)
+                        Text("겉바속촉").font(.system(size:25, weight: .black))
+                        Text("빨강").font(.system(size:25, weight: .black))
+                            .foregroundColor(Color.red)
                     }
-                    Text("전체 사용자의 2%에 해당합니다")
+                    Text("전체 사용자의 11%에 해당합니다")
                         .font(.system(size:17, weight: .medium))
                         .foregroundColor(Color.gray)
-                    Image("blue")
+                    Image("red")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                     
-                    ForEach(MyResultlist.Bluelist.items) {
+                    ForEach(MyResultlist.Redlist.items) {
                         index in
-                        RowView(resultlistItem: self.$MyResultlist.Bluelist.items[index])
+                        RowView(resultlistItem: self.$MyResultlist.Redlist.items[index])
                     } // End of ForEach
                 }
                 .navigationBarTitle("", displayMode: .inline)
@@ -63,18 +54,17 @@ struct ResultBlueView: View {
         } // End of VStack
         .onDisappear(){
             print("ChecklistView has disappeared!")
-            self.MyResultlist.Bluelist.saveResultlistItems()
+            self.MyResultlist.Redlist.saveResultlistItems()
         } // End of .onDisappear()
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification)){
             _ in print("willResignActiveNotification")
-            self.MyResultlist.Bluelist.saveResultlistItems()
+            self.MyResultlist.Redlist.saveResultlistItems()
         }
-            
-    } // End of body
-} // End of View
+    }
+}
 
-struct ResultAView_Previews: PreviewProvider {
+struct ResultRedView_Previews: PreviewProvider {
     static var previews: some View {
-        ResultBlueView()
+        ResultRedView()
     }
 }
