@@ -124,7 +124,7 @@ struct ResultListTabView: View {
                     ResultBlackView()
                 })
             }
-            .navigationBarTitle("Result List")
+            .navigationBarTitle("🌈Result List")
         } // End of navigationView
     }
 }

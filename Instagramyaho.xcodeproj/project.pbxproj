@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,13 +22,17 @@
 		F107E9C1267DACE900864F08 /* ResultYellowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F107E9C0267DACE900864F08 /* ResultYellowView.swift */; };
 		F107E9C4267DAD3F00864F08 /* ResultNavyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F107E9C3267DAD3F00864F08 /* ResultNavyView.swift */; };
 		F107E9C7267DADA600864F08 /* ResultPurpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F107E9C6267DADA600864F08 /* ResultPurpleView.swift */; };
+		F107E9CC267DCCCA00864F08 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F107E9CB267DCCCA00864F08 /* Lottie */; };
+		F107E9CF267DCCF800864F08 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F107E9CE267DCCF800864F08 /* LottieView.swift */; };
+		F107E9D2267DCEE300864F08 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = F107E9D1267DCEE300864F08 /* loading.json */; };
+		F107E9E7267DFCDC00864F08 /* PeopleTapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F107E9E6267DFCDC00864F08 /* PeopleTapView.swift */; };
+		F107E9EA267DFD6000864F08 /* PeoplelistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F107E9E9267DFD6000864F08 /* PeoplelistItem.swift */; };
+		F107E9ED267DFDF200864F08 /* Peoplelist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F107E9EC267DFDF200864F08 /* Peoplelist.swift */; };
 		F1183567267A41B80029D7B7 /* Mylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1183566267A41B80029D7B7 /* Mylist.swift */; };
 		F12F7F8B2673525300723764 /* ResultListTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F7F8A2673525300723764 /* ResultListTabView.swift */; };
 		F12F7F8E2673530D00723764 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F7F8D2673530D00723764 /* HomeTabView.swift */; };
 		F12F7F922673594500723764 /* ResultBlueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F7F912673594500723764 /* ResultBlueView.swift */; };
 		F12F7F952673596100723764 /* ResultGreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F7F942673596100723764 /* ResultGreenView.swift */; };
-		F1BB4FD22665FE3200613667 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1BB4FD12665FE3200613667 /* LoadingView.xib */; };
-		F1BB4FD52665FE5D00613667 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BB4FD42665FE5D00613667 /* LoadingView.swift */; };
 		F1CD57252679DA350018E5B1 /* Resultlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD57242679DA350018E5B1 /* Resultlist.swift */; };
 		F1CD57282679DA600018E5B1 /* ResultlistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD57272679DA600018E5B1 /* ResultlistItem.swift */; };
 		F1CD572B2679DAFC0018E5B1 /* NewResultlistItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD572A2679DAFC0018E5B1 /* NewResultlistItemView.swift */; };
@@ -57,13 +61,16 @@
 		F107E9C0267DACE900864F08 /* ResultYellowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultYellowView.swift; sourceTree = "<group>"; };
 		F107E9C3267DAD3F00864F08 /* ResultNavyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultNavyView.swift; sourceTree = "<group>"; };
 		F107E9C6267DADA600864F08 /* ResultPurpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPurpleView.swift; sourceTree = "<group>"; };
+		F107E9CE267DCCF800864F08 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		F107E9D1267DCEE300864F08 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		F107E9E6267DFCDC00864F08 /* PeopleTapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTapView.swift; sourceTree = "<group>"; };
+		F107E9E9267DFD6000864F08 /* PeoplelistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplelistItem.swift; sourceTree = "<group>"; };
+		F107E9EC267DFDF200864F08 /* Peoplelist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peoplelist.swift; sourceTree = "<group>"; };
 		F1183566267A41B80029D7B7 /* Mylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mylist.swift; sourceTree = "<group>"; };
 		F12F7F8A2673525300723764 /* ResultListTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultListTabView.swift; sourceTree = "<group>"; };
 		F12F7F8D2673530D00723764 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
 		F12F7F912673594500723764 /* ResultBlueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultBlueView.swift; sourceTree = "<group>"; };
 		F12F7F942673596100723764 /* ResultGreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultGreenView.swift; sourceTree = "<group>"; };
-		F1BB4FD12665FE3200613667 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
-		F1BB4FD42665FE5D00613667 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		F1CD57242679DA350018E5B1 /* Resultlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resultlist.swift; sourceTree = "<group>"; };
 		F1CD57272679DA600018E5B1 /* ResultlistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultlistItem.swift; sourceTree = "<group>"; };
 		F1CD572A2679DAFC0018E5B1 /* NewResultlistItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewResultlistItemView.swift; sourceTree = "<group>"; };
@@ -79,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F107E9CC267DCCCA00864F08 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,31 +113,27 @@
 		EBE636A52644D2DE00F8F77F /* Instagramyaho */ = {
 			isa = PBXGroup;
 			children = (
-				F1BB4FD42665FE5D00613667 /* LoadingView.swift */,
-				F1BB4FD12665FE3200613667 /* LoadingView.xib */,
+				F107E9D5267DCF1A00864F08 /* ResultView */,
 				EBE636A62644D2DE00F8F77F /* AppDelegate.swift */,
 				EBE636A82644D2DE00F8F77F /* SceneDelegate.swift */,
 				EBE636AA2644D2DE00F8F77F /* ContentView.swift */,
 				F12F7F8D2673530D00723764 /* HomeTabView.swift */,
 				F12F7F8A2673525300723764 /* ResultListTabView.swift */,
 				F1CD573C2679EFE30018E5B1 /* MylistTabView.swift */,
-				F12F7F942673596100723764 /* ResultGreenView.swift */,
-				F12F7F912673594500723764 /* ResultBlueView.swift */,
-				F107E9AC267DA28100864F08 /* ResultBlackView.swift */,
-				F107E9B0267DA55F00864F08 /* ResultRedView.swift */,
-				F107E9BD267DAC7100864F08 /* ResultOrangeView.swift */,
-				F107E9C0267DACE900864F08 /* ResultYellowView.swift */,
-				F107E9C3267DAD3F00864F08 /* ResultNavyView.swift */,
-				F107E9C6267DADA600864F08 /* ResultPurpleView.swift */,
+				F107E9E6267DFCDC00864F08 /* PeopleTapView.swift */,
+				F107E9CE267DCCF800864F08 /* LottieView.swift */,
 				F1CD572D2679DDFA0018E5B1 /* RowView.swift */,
 				F1061D3A265697200093ABB1 /* ProcessView.swift */,
+				F1CD572A2679DAFC0018E5B1 /* NewResultlistItemView.swift */,
 				F1183566267A41B80029D7B7 /* Mylist.swift */,
 				F1CD57242679DA350018E5B1 /* Resultlist.swift */,
+				F107E9EC267DFDF200864F08 /* Peoplelist.swift */,
 				F1CD57272679DA600018E5B1 /* ResultlistItem.swift */,
-				F1CD572A2679DAFC0018E5B1 /* NewResultlistItemView.swift */,
+				F107E9E9267DFD6000864F08 /* PeoplelistItem.swift */,
 				EBE636AC2644D2DF00F8F77F /* Assets.xcassets */,
 				EBE636B12644D2DF00F8F77F /* LaunchScreen.storyboard */,
 				EBE636B42644D2DF00F8F77F /* Info.plist */,
+				F107E9D1267DCEE300864F08 /* loading.json */,
 				F1CD57332679ECF40018E5B1 /* Extensions */,
 				EBE636AE2644D2DF00F8F77F /* Preview Content */,
 			);
@@ -142,6 +146,21 @@
 				EBE636AF2644D2DF00F8F77F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F107E9D5267DCF1A00864F08 /* ResultView */ = {
+			isa = PBXGroup;
+			children = (
+				F12F7F942673596100723764 /* ResultGreenView.swift */,
+				F12F7F912673594500723764 /* ResultBlueView.swift */,
+				F107E9AC267DA28100864F08 /* ResultBlackView.swift */,
+				F107E9B0267DA55F00864F08 /* ResultRedView.swift */,
+				F107E9BD267DAC7100864F08 /* ResultOrangeView.swift */,
+				F107E9C0267DACE900864F08 /* ResultYellowView.swift */,
+				F107E9C3267DAD3F00864F08 /* ResultNavyView.swift */,
+				F107E9C6267DADA600864F08 /* ResultPurpleView.swift */,
+			);
+			path = ResultView;
 			sourceTree = "<group>";
 		};
 		F1CD57332679ECF40018E5B1 /* Extensions */ = {
@@ -171,6 +190,9 @@
 			dependencies = (
 			);
 			name = Instagramyaho;
+			packageProductDependencies = (
+				F107E9CB267DCCCA00864F08 /* Lottie */,
+			);
 			productName = Instagramyaho;
 			productReference = EBE636A32644D2DE00F8F77F /* Instagramyaho.app */;
 			productType = "com.apple.product-type.application";
@@ -198,6 +220,9 @@
 				Base,
 			);
 			mainGroup = EBE6369A2644D2DE00F8F77F;
+			packageReferences = (
+				F107E9CA267DCCCA00864F08 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = EBE636A42644D2DE00F8F77F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -214,7 +239,7 @@
 			files = (
 				F107E9B8267DA9AF00864F08 /* Colors.xcassets in Resources */,
 				EBE636B32644D2DF00F8F77F /* LaunchScreen.storyboard in Resources */,
-				F1BB4FD22665FE3200613667 /* LoadingView.xib in Resources */,
+				F107E9D2267DCEE300864F08 /* loading.json in Resources */,
 				EBE636B02644D2DF00F8F77F /* Preview Assets.xcassets in Resources */,
 				EBE636AD2644D2DF00F8F77F /* Assets.xcassets in Resources */,
 			);
@@ -234,7 +259,9 @@
 				F1CD57372679ECF40018E5B1 /* IndexedCollection.swift in Sources */,
 				F1CD57282679DA600018E5B1 /* ResultlistItem.swift in Sources */,
 				EBE636A92644D2DE00F8F77F /* SceneDelegate.swift in Sources */,
+				F107E9E7267DFCDC00864F08 /* PeopleTapView.swift in Sources */,
 				F107E9AD267DA28100864F08 /* ResultBlackView.swift in Sources */,
+				F107E9EA267DFD6000864F08 /* PeoplelistItem.swift in Sources */,
 				F107E9B1267DA55F00864F08 /* ResultRedView.swift in Sources */,
 				F107E9C7267DADA600864F08 /* ResultPurpleView.swift in Sources */,
 				F1CD57382679ECF40018E5B1 /* Binding.swift in Sources */,
@@ -245,9 +272,10 @@
 				F107E9BE267DAC7100864F08 /* ResultOrangeView.swift in Sources */,
 				F107E9C4267DAD3F00864F08 /* ResultNavyView.swift in Sources */,
 				F1CD57252679DA350018E5B1 /* Resultlist.swift in Sources */,
-				F1BB4FD52665FE5D00613667 /* LoadingView.swift in Sources */,
+				F107E9ED267DFDF200864F08 /* Peoplelist.swift in Sources */,
 				EBE636AB2644D2DE00F8F77F /* ContentView.swift in Sources */,
 				F1CD572B2679DAFC0018E5B1 /* NewResultlistItemView.swift in Sources */,
+				F107E9CF267DCCF800864F08 /* LottieView.swift in Sources */,
 				F1CD572E2679DDFA0018E5B1 /* RowView.swift in Sources */,
 				F12F7F8E2673530D00723764 /* HomeTabView.swift in Sources */,
 				F12F7F922673594500723764 /* ResultBlueView.swift in Sources */,
@@ -449,6 +477,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F107E9CA267DCCCA00864F08 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F107E9CB267DCCCA00864F08 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F107E9CA267DCCCA00864F08 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EBE6369B2644D2DE00F8F77F /* Project object */;
 }

@@ -11,6 +11,7 @@ struct ResultBlueView: View {
     @EnvironmentObject var MyResultlist: UserSetting
     //@ObservedObject var resultlist = Resultlist()
     @Environment(\.presentationMode) var presentationMode
+    @State private var showingAlert = false
     
     /*
     init() {
@@ -31,6 +32,21 @@ struct ResultBlueView: View {
                     .padding(10)
                 }
                 Spacer()
+                Button(action: {
+                    let resultimage = takeCapture()
+                    saveInPhoto(img: resultimage)
+                    //sharePicture(img: resultimage)
+                    self.showingAlert = true
+                    
+                }) {
+                    Image(systemName: "square.and.arrow.down")
+                        .font(.title)
+                        .foregroundColor(.blue)
+                        .padding(10)
+                }
+                .alert(isPresented: $showingAlert) {
+                    Alert(title: Text("알림"), message: Text("사진이 저장되었습니다.\n앨범을 확인하세요!"), dismissButton: .default(Text("OK")))
+                }
             }
             NavigationView{
                 ScrollView {
@@ -71,6 +87,29 @@ struct ResultBlueView: View {
         }
             
     } // End of body
+    
+    func takeCapture() -> UIImage {
+            var image: UIImage?
+            guard let currentLayer = UIApplication.shared.windows.first { $0.isKeyWindow }?.layer else { return UIImage() }
+
+            let currentScale = UIScreen.main.scale
+
+            UIGraphicsBeginImageContextWithOptions(currentLayer.frame.size, false, currentScale)
+
+            guard let currentContext = UIGraphicsGetCurrentContext() else { return UIImage() }
+
+            currentLayer.render(in: currentContext)
+
+            image = UIGraphicsGetImageFromCurrentImageContext()
+
+            UIGraphicsEndImageContext()
+
+            return image ?? UIImage()
+        }
+    
+    func saveInPhoto(img: UIImage) {
+            UIImageWriteToSavedPhotosAlbum(img, nil, nil, nil)
+    }
 } // End of View
 
 struct ResultAView_Previews: PreviewProvider {

@@ -19,16 +19,18 @@ struct ProcessView: View {
     
     var body: some View {
         NavigationView{
-            VStack(spacing: 30){
-                Image("logo").padding()
+            VStack(){
+                //Image("logo").padding()
                 HStack{
                     Image(systemName: "person")
-                    Text("\(userid)님의 계정을 분석중입니다.").padding()
-                }
-                ProgressView(value: progressValue).onReceive(timer) { _ in if self.progressValue < 1.0 { self.progressValue += 0.1 } }
+                    Text("\(userid)님의")
+                }.font(.title3)
+                Text("계정을 분석중입니다.")
+                .font(.title3)
+                .onReceive(timer) { _ in if self.progressValue < 1.0 { self.progressValue += 0.2 } else {self.timeFlag = true}}
                 //Text("\(currentDate)") .onReceive(timer) { input in self.currentDate = input }
                 //Text("\(timeRemaining)") .onReceive(timer) { _ in if self.timeRemaining > 0 { self.timeRemaining -= 1 } }
-                
+                LottieView(filename: "loading").frame(width: 200, height: 200)
                 HStack{
                     Button(action: {
                         if self.progressValue >= 1.0 {
@@ -38,18 +40,26 @@ struct ProcessView: View {
                             self.timeFlag = true
                         }
                     }){
-                        Text("result")
-                            .fontWeight(.bold)
-                            .foregroundColor(Color.white)
-                            .frame(width: 200, height: 20, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                            .padding()
-                            .background(RoundedRectangle(cornerRadius: 5).strokeBorder())
-                            .background(Color.blue)
+                        HStack{
+                            Text("   ")
+                            Image(systemName: "magnifyingglass").font(.title3)
+                            Text("결과 확인하기   ").font(.title3).fontWeight(.bold)
+                        }
+                        //.foregroundColor(Color.white)
+                            //.frame(width: 100, height: 20, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .padding()
+                            //.background(RoundedRectangle(cornerRadius: 30).strokeBorder())
+                        //.background(LinearGradient(gradient: Gradient(colors: [Color.white, Color.yellow]), startPoint: .leading, endPoint: .trailing))
+                        .background(RoundedRectangle(cornerRadius: 30).strokeBorder())
+                        //.cornerRadius(30)
 
                     }
+                    .disabled(timeFlag == false)
+                    /*
                     .alert(isPresented: $timeFlag) {
                         Alert(title: Text("Wait"), message: Text(alertMessage()), dismissButton: .default(Text("OK")))
                     }
+                     */
                     /*
                     .sheet(isPresented: $showingSheet){
                         //resultView()
@@ -61,6 +71,9 @@ struct ProcessView: View {
                         ResultBlueView()
                     })
                 }.padding()
+                Spacer()
+                Text("   ").padding(.bottom, 100)
+                Spacer()
                     
             }
         }.navigationViewStyle(StackNavigationViewStyle())
@@ -92,16 +105,16 @@ struct SecondView: View {
             Color(.systemTeal)
                 .ignoresSafeArea()
             VStack{
-            Button(action: {
-                presentationMode.wrappedValue.dismiss()
-            }) {
-              Image(systemName: "xmark")
-                .font(.title)
-                .foregroundColor(.blue)
-                .padding(20)
-            }
-            //Spacer()
-            Text("Result")
+                Button(action: {
+                    presentationMode.wrappedValue.dismiss()
+                }) {
+                  Image(systemName: "xmark")
+                    .font(.title)
+                    .foregroundColor(.blue)
+                    .padding(20)
+                }
+                //Spacer()
+                Text("Result")
             }
         }
     }
